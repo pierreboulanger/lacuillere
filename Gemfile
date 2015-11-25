@@ -35,6 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do
@@ -45,3 +47,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'rspec-rails', group: [ :test ]
