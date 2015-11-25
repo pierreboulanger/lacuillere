@@ -6,7 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-require 'faker'
+
+Restaurant.destroy_all
 
 10.times do
   Restaurant.create(
@@ -16,3 +17,6 @@ require 'faker'
     category: "chinese"
     )
 end
+
+
+puts "#{Restaurant.count} restaurants were created."
