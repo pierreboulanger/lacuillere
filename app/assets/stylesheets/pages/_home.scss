@@ -1,0 +1,21 @@
+/* -------------------------------------
+ * SASS code SPECIFIC TO your home page
+ * (margin/padding adjustments, background image, etc..)
+ * ------------------------------------- */
+ .welcome {
+  color: white;
+  font-size: 90px;
+  margin-top: 200px;
+}
+
+.link {
+  color: white;
+  font-size: 30px;
+}
+
+.link:hover {
+  text-decoration: none;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: white;
+}

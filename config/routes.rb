@@ -3,4 +3,5 @@ Rails.application.routes.draw do
     resources :reviews, only: [:new, :create]
   end
 
+  root to: "static_pages#home"
 end

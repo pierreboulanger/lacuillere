@@ -1,13 +1,12 @@
-<h1>New Review</h1>
+<div class="review-box text-center">
+  <h1>New Review</h1>
 
-<%= form_for [@restaurant, @review] do |f| %>
-  <%= f.label "Add a content" %>
-  <%= f.text_field :content, :placeholder => "Write your review" %><br />
-
-  <%= f.label "Add a rating"%>
-  <%= f.number_field :rating, :placeholder => "Between 0 and 5" %><br />
-
-  <%= f.submit %>
-<% end %>
-
-<%= link_to 'Back', restaurants_path %>
+  <%= form_for [@restaurant, @review] do |f| %>
+    <%= f.label "Add a content" %>
+    <%= f.text_field :content, :placeholder => "Write your review" %><br />
+    <%= f.label "Add a rating"%>
+    <%= f.number_field :rating, :placeholder => "Between 0 and 5" %><br />
+    <%= f.submit %>
+  <% end %>
+  <%= link_to 'Back', restaurants_path, class: "back"%>
+</div>

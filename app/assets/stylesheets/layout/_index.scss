@@ -1,0 +1,28 @@
+@import "utilities";
+@import "footer";
+@import "navbar";
+@import "list";
+
+html {
+  background: url("background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+}
+
+.container {
+  color: white;
+}
+
+h1 {
+  padding: 40px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}

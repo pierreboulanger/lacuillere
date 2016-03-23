@@ -1,0 +1,35 @@
+// Your footer style
+.social:hover {
+ transform: scale(1.1);
+}
+.social {
+ transform: scale(0.8);
+ transition-duration: 0.5s;
+ color: white;
+}
+
+/*
+  Multicoloured Hover Variations
+  */
+
+  #social-fb:hover {
+    color: #3B5998;
+  }
+  #social-tw:hover {
+    color: #4099FF;
+  }
+  #social-gp:hover {
+    color: #d34836;
+  }
+  #social-em:hover {
+    color: #f39c12;
+  }
+
+  .footer {
+    background: linear-gradient(180deg, transparent, 36%, black);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+  }
