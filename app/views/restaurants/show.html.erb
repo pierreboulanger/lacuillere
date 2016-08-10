@@ -1,46 +1,53 @@
-<% content_for(:title) do %>
+<div class="show-page text-center">
+  <% content_for(:title) do %>
   <%= @restaurant.name %> is on La Cuillere
-<% end %>
+  <% end %>
 
-<% content_for(:description) do %>
+  <% content_for(:description) do %>
   <%= @restaurant.phone_number %>
-<% end %>
+  <% end %>
 
-<h1><%= @restaurant.name %></h1>
+  <h1><%= @restaurant.name %></h1>
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @restaurant.name %>
+  </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @restaurant.address %>
-</p>
+  <p>
+    <strong>Address:</strong>
+    <%= @restaurant.address %>
+  </p>
 
-<p>
-  <strong>Phone number:</strong>
-  <%= @restaurant.phone_number %>
-</p>
+  <p>
+    <strong>Phone number:</strong>
+    <%= @restaurant.phone_number %>
+  </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @restaurant.category %>
-</p>
+  <p>
+    <strong>Category:</strong>
+    <%= @restaurant.category %>
+  </p>
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+  <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+  <%= link_to 'Back', restaurants_path %>
 
-<h3>
-  <strong>Review:</strong>
-</h3>
-
-<% counter = 0 %>
-<% @restaurant.reviews.each do |review| %>
-  <% counter += 1 %>
-  <p><strong>Review <%= counter %></strong></p>
-  <p> Description : <%= review.content %></p>
-  <p> Rating : <%= review.rating %></p>
-<% end -%>
+  <h3>
+    <strong>Review:</strong>
+  </h3>
+  <div class="container">
+    <div class="row">
+      <% counter = 0 %>
+      <% @restaurant.reviews.each do |review| %>
+        <% counter += 1 %>
+        <div class="col-xs-4">
+          <p><strong>Review <%= counter %></strong></p>
+          <p> Description : <%= review.content %></p>
+          <p> Rating : <%= review.rating %></p>
+        </div>
+      <% end -%>
+    </div>
+  </div>
+</div>
